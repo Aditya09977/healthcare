@@ -3,7 +3,7 @@
 [![Python Version](https://img.shields.io/badge/Python-3.11-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-ODbL%20%2F%20Academic-green.svg)](https://opendatacommons.org/licenses/odbl/)
 [![Streamlit App](https://img.shields.io/badge/Dashboard-Streamlit-FF4B4B.svg)](https://streamlit.io/)
-[![IEEE Conference Report](https://img.shields.io/badge/Paper-IEEE%20Format-0A2540.svg)](report/IEEE_Report.docx)
+[![IEEE Conference Report](https://img.shields.io/badge/Paper-IEEE%20Format-0A2540.svg)](report/Healthcare_Analytics_IEEE_Finalll.docx)
 
 An end-to-end machine learning research project and decision-support system analyzing facility-level financial performance, capacity readiness, and resource utilization patterns among California healthcare institutions. Developed as an academic CA3 Machine Learning Mini-Project.
 
@@ -279,7 +279,8 @@ healthcare/
 │   ├── PLAGIARISM_CHECKLIST.md         # Plagiarism protocol
 │   └── SUBMISSION_CHECKLIST.md         # Submission audit sheet
 ├── report/
-│   ├── IEEE_Report.docx                # Full 6-page IEEE Research Report (~867 KB)
+│   ├── Healthcare_Analytics_IEEE_Finalll.docx # Full IEEE Research Report (.docx)
+│   ├── Healthcare_Analytics_IEEE_Finalll.pdf  # PDF Export of Research Report (.pdf)
 │   ├── IEEE_LaTeX_Source.zip           # Complete LaTeX source bundle (.tex, .bib, figures)
 │   └── latex/                          # Uncompressed LaTeX source files
 └── presentation/

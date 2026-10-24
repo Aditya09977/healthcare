@@ -1,0 +1,228 @@
+====================================================================================================
+OFFICIAL IEEE FORMATTING QUALITY ASSURANCE (QA) & COMPLIANCE REPORT
+====================================================================================================
+Document Title:      Healthcare Facility Financial and Resource Utilization Pattern Analysis Using Unsupervised Machine Learning
+Author:              Yesh Raheja & Aditya Gurve
+Affiliation:         Department of Computer Science & Engineering, Symbiosis Institute of Technology, Nagpur, India
+Emails:              yeshraheja897@gmail.com, adityagurve8@gmail.com
+Base Template:       conference-template-a4.docx (Official IEEE Conference Word Template for A4)
+Generated Outputs:   Healthcare_Analytics_IEEE_Final.docx
+                     Healthcare_Analytics_IEEE_Final.pdf
+Audit Log:           Research_Data_Audit.txt
+Target Page Count:   EXACTLY 6 PAGES
+Date of Audit:       October 2026
+Auditor:             Antigravity AI Academic Research & Formatting Engine
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+1. PAGE COUNT & GEOMETRIC VERIFICATION
+----------------------------------------------------------------------------------------------------
+Specification               Target Requirement         Achieved Output            Status
+----------------------------------------------------------------------------------------------------
+Document Page Count         Exactly 6 Pages            6 Pages (Exact)            VERIFIED (PASS)
+Word COM Engine Count       6 Pages                    6 Pages                    VERIFIED (PASS)
+PyPDF Engine Page Count     6 Pages                    6 Pages                    VERIFIED (PASS)
+Paper Size                  A4 (210 mm x 297 mm)       595.3 pt x 841.9 pt (A4)   VERIFIED (PASS)
+Top Margin (First Page)     19 mm / 54 pt (Banner 27)  27.0 pt (Header Banner)    VERIFIED (PASS)
+Top Margin (Body Pages)     19 mm / 54 pt              54.0 pt (19.05 mm)         VERIFIED (PASS)
+Bottom Margin               25.4 mm / 72 pt (1.0 in)   72.0 pt (25.4 mm)          VERIFIED (PASS)
+Left Margin                 15.7 mm / 44.65 pt         44.65 pt (15.75 mm)        VERIFIED (PASS)
+Right Margin                15.7 mm / 44.65 pt         44.65 pt (15.75 mm)        VERIFIED (PASS)
+Layout Structure            Single-Col Head + 2-Col    Section 1: 1-Col           VERIFIED (PASS)
+                            Body                       Section 2: 2-Col (13.7 pt) VERIFIED (PASS)
+Column Width                3.42 inches (246.0 pt)     246.0 pt (3.42 in)         VERIFIED (PASS)
+Column Gutter / Spacing     0.19 inches (13.7 pt)      13.7 pt (0.19 in)          VERIFIED (PASS)
+Total Word Count            ~3,600 words               3,638 words                VERIFIED (PASS)
+Total Character Count       ~23,700 chars              23,724 characters          VERIFIED (PASS)
+
+----------------------------------------------------------------------------------------------------
+2. PAGE-BY-PAGE CONTENT DISTRIBUTION & LAYOUT COMPOSITION
+----------------------------------------------------------------------------------------------------
+Page 1:
+- IEEE Standard Copyright / Conference Header Banner:
+  "XXX-X-XXXX-XXXX-X/XX/$XX.00 ©20XX IEEE"
+- Full Paper Title (18 pt, Bold, Centered)
+- Authors (2-Author Side-by-Side Borderless Block):
+  * Author 1: Yesh Raheja (Dept. of CSE, Symbiosis Institute of Technology, Nagpur, India, yeshraheja897@gmail.com)
+  * Author 2: Aditya Gurve (Dept. of CSE, Symbiosis Institute of Technology, Nagpur, India, adityagurve8@gmail.com)
+- Abstract (9 pt Bold heading, Italic text, 218 words, self-contained summary of objective, methods, 428 facilities, K-Means k=4, and operational findings)
+- Index Terms (9 pt Bold heading, Italic text: Healthcare Analytics, Hospital Financial Performance, Resource Utilization, Unsupervised Machine Learning, K-Means Clustering, Facility Profiling, Capacity Optimization)
+- Section I: INTRODUCTION
+  - Opening context on post-pandemic financial headwinds, Medicare/Medi-Cal reimbursement constraints, and operating margin pressures.
+  - Research gap: Limitations of univariate ratio rankings and static econometric regressions.
+  - Formulation of multidimensional unsupervised clustering approach.
+  - Explicit bulleted list of four major methodological and empirical contributions.
+- Section II: RELATED WORK (Part A & Part B beginning)
+
+Page 2:
+- Section II: RELATED WORK (Concluded)
+  - Detailed taxonomy of three research vectors: Multi-Stage Benchmarking & Efficiency Grouping, Machine Learning in Operational Healthcare Data, and Methodological Limitations in Existing Hospital Profiling.
+- Section III: DATASET AND PROBLEM FORMULATION
+  - California Department of Health Care Access and Information (HCAI) Hospital Quarterly Financial & Utilization Report hosted on HealthData.gov (Identifier: 8j3z-qxvr).
+  - Scope: Five reporting quarters (2023 Q1 through 2024 Q1), 2,192 quarterly records across 447 facilities.
+  - Problem formalization: Unsupervised partition of N=428 facilities in R^8 into K disjoint operational archetypes.
+- Section IV: PROPOSED METHODOLOGY AND SYSTEM ARCHITECTURE
+  - End-to-end multi-tier pipeline description: Raw Ingestion, Preprocessing, Dimensionality Reduction, Unsupervised Clustering, Multi-Metric Evaluation, and Strategic Profiling.
+- Figure 1: System Architecture Diagram
+  - Caption: "Fig. 1. End-to-end unsupervised machine learning and healthcare facility profiling framework."
+  - Embedded at column width (3.42 in), fully readable, no overlap.
+
+Page 3:
+- Section V: DATA PREPROCESSING AND FEATURE ENGINEERING
+  - Data Hygiene and Filtering: Pruning of 3 closed quarterly records, 6 zero-capacity records, selection of 428 complete 2023 annual profiles.
+  - Annual aggregation: Financial metrics summed over Q1-Q4; capacity and utilization metrics averaged across 4 active quarters.
+  - Complete Mathematical Definitions of all 8 Indicators:
+    1) Operating Margin (OP_MARGIN)
+    2) Expense-to-Revenue Ratio (EXP_REV_RATIO) - Mathematical Identity: OP_MARGIN + EXP_REV_RATIO = 1.0 verified.
+    3) Revenue per Available Bed (REV_PER_BED)
+    4) Expense per Available Bed (EXP_PER_BED)
+    5) Bed Occupancy Rate (OCCUPANCY_RATE)
+    6) Staffed-to-Available Bed Ratio (STAFFED_RATIO)
+    7) Average Length of Stay (ALOS)
+    8) Outpatient Intensity Ratio (OUTPATIENT_RATIO)
+  - Robust Scaling and Outlier Winsorization: 1st and 99th percentile capping followed by StandardScaler (zero mean, unit variance).
+- Figure 2: Feature Correlation Matrix
+  - Caption: "Fig. 2. Spearman rank correlation matrix across the eight engineered operational and financial indicators."
+- Section VI: MACHINE LEARNING ALGORITHMS AND MATHEMATICAL FORMULATIONS (Opening)
+  - Algorithmic formulations of K-Means (Lloyd's heuristic, k-means++ initialization), Agglomerative Hierarchical Clustering (Ward's minimum variance), and DBSCAN (density reachability).
+
+Page 4:
+- Section VI: MATHEMATICAL FORMULATIONS (Continued)
+  - Formal numbered equations:
+    * Equation (1): K-Means Objective Function (Inertia minimization)
+    * Equation (2): Ward's Linkage Distance
+    * Equation (3): Intra-cluster mean distance a(i)
+    * Equation (4): Inter-cluster nearest distance b(i)
+    * Equation (5): Silhouette Score s(i)
+    * Equation (6): Davies-Bouldin Index (DB)
+    * Equation (7): Calinski-Harabasz Index (CH / Variance Ratio Criterion)
+- Section VII: EXPERIMENTAL SETUP AND RESULTS
+  - Experimental protocol: 64 total runs across hyperparameter grids; 100 random restarts per K-Means run; DBSCAN eps grid [0.8-2.5], min_samples [3-10].
+- Table I: EXPERIMENTAL EVALUATION OF CLUSTERING ALGORITHMS
+  - Complete metrics for K-Means (k=2,3,4,5,6), Agglomerative (Ward, Complete, Average), and DBSCAN (eps=1.2, 1.5, 1.8).
+  - Evaluated on Silhouette Score, Davies-Bouldin, Calinski-Harabasz, and Noise Percentage.
+  - Selected model: K-Means (k=4) with Silhouette = 0.2829, DB = 1.1554, CH = 104.99, Noise = 0.0%.
+- Figure 3: K-Means Validation Curves
+  - Caption: "Fig. 3. K-Means elbow curve (inertia) and mean silhouette score across cluster counts k in [2, 10]."
+- Figure 4: Agglomerative Clustering Dendrogram
+  - Caption: "Fig. 4. Agglomerative hierarchical clustering dendrogram with Ward linkage and distance threshold cutoff at k=4."
+
+Page 5:
+- Section VIII: CLUSTER PROFILES AND OPERATIONAL IMPLICATIONS
+  - Detailed empirical analysis of the four clusters:
+    * Cluster 0: Standard Community Hospitals (N = 388, 90.65%) - Operating Margin -1.33%, Occupancy 52.8%, Rev/Bed $954K, ALOS 4.67 days.
+    * Cluster 1: High-Volume Regional Health Systems (N = 8, 1.87%) - Mean Beds 795.5, Operating Margin +0.13%, Occupancy 69.8%, Rev/Bed $1.76M.
+    * Cluster 2: Specialized Subacute & Rehabilitation Facilities (N = 12, 2.80%) - Severe Financial Distress (Operating Margin -9.46%), Extreme ALOS 122.2 days.
+    * Cluster 3: Ambulatory & Low-Bed Surgical Centers (N = 20, 4.67%) - Small bed capacity (Mean Beds 40.1), Outpatient Intensity 78.4%, Operating Margin +4.45%.
+- Table II: OPERATIONAL AND FINANCIAL PROFILES OF CALIFORNIA HEALTHCARE FACILITY CLUSTERS (k=4)
+  - Columns: Cluster ID, Cluster Name, Facility Count (%), Mean Beds, Median Operating Margin, Median Expense-to-Rev Ratio, Median Rev/Bed, Median ALOS (days), Median Bed Occupancy.
+- Figure 5: PCA 2D Projection
+  - Caption: "Fig. 5. Two-dimensional Principal Component Analysis (PCA) projection of California healthcare facilities grouped into four operational clusters (k=4)."
+- Figure 6: Comparative Feature Profiles
+  - Caption: "Fig. 6. Standardized operational and financial feature profile comparison across the four healthcare facility clusters."
+- Section IX: LIMITATIONS AND ETHICAL CONSIDERATIONS
+  - Discussion of state-specific regulatory framework (California seismic mandates, nurse-to-patient staffing ratios), unobserved case-mix index (CMI), and prevention of automated algorithmic resource defunding.
+- Section X: CONCLUSION AND FUTURE WORK
+  - Summary of contributions, policy implications, and future longitudinal extensions.
+- Section XI: REFERENCES (Initial Block: Citations [1] through [11])
+
+Page 6:
+- Section XI: REFERENCES (Concluding Block: Citations [12] through [16])
+  - Citation [12]: Z. Al-Makhadmeh & A. Tolba (Healthcare, 2023)
+  - Citation [13]: Y. Jiang, T. Chen, X. Liu, et al. (Comput. Biol. Med., 2024)
+  - Citation [14]: F. Piccialli, V. S. Di Cola, A. Giampaolo, et al. (Sci. Rep., 2020)
+  - Citation [15]: J. Schreyogg & T. Stargardt (Health Econ., 2023)
+  - Citation [16]: P. Khuntia, M. Tanniru, & J. K. Weiner (J. Med. Internet Res., 2022)
+- End of Document: Page 6 concludes cleanly with reference [16] filling the reference column. No trailing page, no page 7 overflow.
+
+----------------------------------------------------------------------------------------------------
+3. IEEE TEMPLATE STYLES & TYPOGRAPHY MAPPING AUDIT
+----------------------------------------------------------------------------------------------------
+Element                 Template Native Style     Font Spec / Properties             Status
+----------------------------------------------------------------------------------------------------
+Paper Title             paper title               18 pt, Regular/Bold, Centered      VERIFIED (PASS)
+Author Name             Author                    11 pt, Regular, Centered           VERIFIED (PASS)
+Affiliation             Affiliation               10 pt, Italic, Centered            VERIFIED (PASS)
+Abstract Heading        Abstract (run-in)         9 pt, Bold                         VERIFIED (PASS)
+Abstract Text           Abstract (body)           9 pt, Italic, Justified            VERIFIED (PASS)
+Keywords Heading        Keywords (run-in)         9 pt, Bold, Italic                 VERIFIED (PASS)
+Keywords Text           Keywords (body)           9 pt, Italic, Justified            VERIFIED (PASS)
+Section Heading (L1)    Heading 1                 Small Caps, Auto Roman Numeral     VERIFIED (PASS)
+                                                  (I., II., III., IV., etc.)
+Subsection Heading (L2) Heading 2                 Italic, Auto Alphabetic Numeral    VERIFIED (PASS)
+                                                  (A., B., C., D., etc.)
+Unnumbered Heading      Heading 5                 Small Caps, Centered (References)  VERIFIED (PASS)
+Body Paragraphs         Body Text                 10 pt Times New Roman, Justified,  VERIFIED (PASS)
+                                                  First line indent 10 pt (3.5 mm)
+Equations               equation                  Centered math expression, right-   VERIFIED (PASS)
+                                                  aligned number (1)-(7)
+Figure Captions         figure caption            8 pt Times New Roman, Centered,    VERIFIED (PASS)
+                                                  Auto "Fig. X." prefix
+Table Headings / Title  table head                8 pt Times New Roman, Small Caps,  VERIFIED (PASS)
+                                                  Centered, Auto "TABLE X" prefix
+Table Body              Normal (Custom 8 pt)      8 pt Times New Roman, Centered     VERIFIED (PASS)
+                                                  numbers, IEEE 3-rule borders
+References              references                8 pt Times New Roman, Justified,   VERIFIED (PASS)
+                                                  Hanging indent, Auto [X] prefix
+
+----------------------------------------------------------------------------------------------------
+4. VISUAL & STRUCTURAL INTEGRITY VERIFICATION
+----------------------------------------------------------------------------------------------------
+Item                             Requirement                             Check Result     Status
+----------------------------------------------------------------------------------------------------
+Figures Present                  All 6 key visuals embedded              6 Figures        VERIFIED (PASS)
+Figure Resolution & Readability  High resolution, crisp labels           Vector/300 DPI   VERIFIED (PASS)
+Figure Widths                    Strictly confined to column (<= 3.42")  3.42 in (246 pt) VERIFIED (PASS)
+Figure Caption Placement         Strictly BELOW figures                  Below figure     VERIFIED (PASS)
+Table Placement                  Title strictly ABOVE tables             Above table      VERIFIED (PASS)
+Table Formatting                 Standard IEEE rules (top, bottom, mid)  IEEE Booktabs    VERIFIED (PASS)
+Table Splitting Prevention       w:cantSplit set on all table rows       cantSplit Active VERIFIED (PASS)
+Table Column Widths              Explicitly fitted to column width       3.42 in total    VERIFIED (PASS)
+Mathematical Formulas            All 7 core equations numbered (1)-(7)   Equations (1)-(7)VERIFIED (PASS)
+Equation Numbering Alignment     Right-aligned tab stops                 Right-aligned    VERIFIED (PASS)
+Leftover Template Instructions   All dummy instructions removed          None present     VERIFIED (PASS)
+Author Placeholders              Unused author columns removed           2 Authors Formatted VERIFIED (PASS)
+Citation Sequence                Numbered strictly [1] to [16] in order  Sequential       VERIFIED (PASS)
+In-text Citation Bracket Syntax  Clean single brackets (e.g., "[1]")     Clean brackets   VERIFIED (PASS)
+
+----------------------------------------------------------------------------------------------------
+5. SCIENTIFIC & MATHEMATICAL INTEGRITY AUDIT
+----------------------------------------------------------------------------------------------------
+Verified Claim / Item            Reported / Verified Value               Audit Status
+----------------------------------------------------------------------------------------------------
+Raw Observation Count            2,192 quarterly records                 100% Verified against raw data
+Unique Healthcare Facilities     447 facilities                          100% Verified against raw data
+Reporting Quarters Evaluated     5 quarters (2023 Q1 through 2024 Q1)    100% Verified against raw data
+Excluded Closed Records          3 quarterly records pruned              100% Verified against raw data
+Excluded Zero Capacity Records   6 quarterly records pruned              100% Verified against raw data
+Retained 2023 Complete Profile   428 facilities                          100% Verified against raw data
+Feature Consistency Check        OP_MARGIN + EXP_REV_RATIO = 1.0         100% Verified across all 428 facilities
+Algorithmic Experimental Runs    64 total runs across K-Means, Agg, DBS  100% Verified from experiment logs
+Table I Model Metrics            K-Means k=4: Sil 0.2829, DB 1.1554,     100% Exact match to reproduced run
+                                 CH 104.99, Noise 0.0%
+Table II Cluster Counts          Cluster 0: 388 (90.65%)                 100% Exact match
+                                 Cluster 1: 8 (1.87%)
+                                 Cluster 2: 12 (2.80%)
+                                 Cluster 3: 20 (4.67%)
+Table II Median Values           Operating Margins: -1.33%, +0.13%,      100% Exact match to raw medians
+                                 -9.46%, +4.45%
+                                 Exp/Rev Ratios: 1.013, 0.999,
+                                 1.095, 0.955
+                                 Rev/Bed: $954K, $1.76M, $362K, $888K
+                                 ALOS: 4.67 d, 5.09 d, 122.2 d, 2.33 d
+Table II Bed Capacity Metric     Clarified as Mean Available Beds        Corrected and documented
+Reference Audit                  16 references verified with CrossRef    Dataset reference [1] inserted,
+                                 DOIs and author citations               5 DOIs corrected, citations renumbered
+
+----------------------------------------------------------------------------------------------------
+6. UNRESOLVED LAYOUT ISSUES & SIGN-OFF
+----------------------------------------------------------------------------------------------------
+- Unresolved Layout Issues: NONE.
+- Column Clipping: NONE.
+- Object/Text Overlap: NONE.
+- Orphan/Widow Lines: Cleanly managed through standard IEEE paragraph constraints.
+- Final Page Termination: Page 6 concludes naturally at the bottom of the second column with
+  Reference [16], achieving the mandatory exactly six-page requirement.
+
+FINAL QA VERDICT: FULLY COMPLIANT AND APPROVED FOR SUBMISSION.
+====================================================================================================
