@@ -1,6 +1,6 @@
 # Final Project Submission Checklist — CA3 Machine Learning Mini-Project
 **Project Title:** Healthcare Facility Financial and Resource Utilization Pattern Analysis Using Machine Learning  
-**Student / Candidate:** Aditya09977  
+**Authors / Candidates:** Yesh Raheja & Aditya Gurve  
 **Submission Deadline:** 24 October 2026, 8:00 PM  
 
 ---
@@ -9,7 +9,7 @@
 
 | Deliverable Item | Target File Location | Requirement Status | Verification Notes |
 | :--- | :--- | :---: | :--- |
-| **1. IEEE Research Report** | `report/IEEE_Report.docx` | **COMPLETE** | Full 6-page conference format in DOCX (~867 KB), complete with equations, tables, embedded figures, and 15 IEEE citations. |
+| **1. IEEE Research Report** | `report/Healthcare_Analytics_IEEE_Finalll.docx` | **COMPLETE** | Official IEEE conference format in DOCX (~1.6 MB), complete with equations, tables, embedded figures, and 16 IEEE citations. |
 | **2. IEEE LaTeX Source Package** | `report/IEEE_LaTeX_Source.zip` | **COMPLETE** | Contains `main.tex`, `references.bib`, and all embedded figures in `figures/`. |
 | **3. PowerPoint Presentation** | `presentation/CA3_Presentation.pptx` | **COMPLETE** | 14 professional slides (~1.1 MB) in 16:9 widescreen format with actual metrics, charts, and diagrams. |
 | **4. Clean GitHub-Ready Codebase** | `src/`, `scripts/`, `app.py` | **COMPLETE** | Modular Python code with `preprocessing.py`, `clustering.py`, `evaluation.py`, and `run_experiments.py`. |
